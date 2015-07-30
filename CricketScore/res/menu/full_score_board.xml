@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/viewscorer"
+        android:icon="@drawable/ic_action_edit"
+        android:showAsAction="ifRoom|withText"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/saveAsHtml"
+        android:icon="@drawable/content_save"
+        android:showAsAction="ifRoom|withText"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/menucontainer"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="ifRoom|withText"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:title="@string/menu_exit"/>
+        </menu>
+    </item>
+
+</menu>

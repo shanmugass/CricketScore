@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menucontainer"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="ifRoom|withText"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/new_match"
+                android:showAsAction="ifRoom|withText"
+                android:title="@string/menu_new_match"/>
+            <item
+                android:id="@+id/view_match"
+                android:showAsAction="ifRoom|withText"
+                android:title="@string/menu_view_match"/>
+            <item
+                android:id="@+id/add_team"
+                android:showAsAction="ifRoom|withText"
+                android:title="@string/menu_add_team"/>
+            <item
+                android:id="@+id/add_team_member"
+                android:showAsAction="ifRoom|withText"
+                android:title="@string/menu_add_team_member"/>
+            <item
+                android:id="@+id/create_sample_team"
+                android:showAsAction="ifRoom|withText"
+                android:title="@string/menu_create_sample_team"/>
+            <item
+                android:id="@+id/view_stats"
+                android:showAsAction="ifRoom|withText"
+                android:title="@string/home_screen_stats"/>
+            <item
+                android:id="@+id/exit"
+                android:showAsAction="ifRoom|withText"
+                android:title="@string/menu_exit"/>
+        </menu>
+    </item>
+
+</menu>

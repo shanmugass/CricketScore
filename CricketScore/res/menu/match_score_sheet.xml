@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_user"
+        android:icon="@drawable/ic_action_user_add"
+        android:showAsAction="ifRoom|withText"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/menu_full_score_board"
+        android:icon="@drawable/ic_action_paste"
+        android:showAsAction="ifRoom|withText"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/menucontainer"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="always"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/SwitchInnings"
+                android:title="Complete Innings"/>
+            <item
+                android:id="@+id/enforceFollowOn"
+                android:title="Enforce Follow On"/>
+            <item
+                android:id="@+id/changeOvers"
+                android:title="Change Allocated Over"/>
+            <item
+                android:id="@+id/completeMatch"
+                android:title="Complete Match"/>
+            <item
+                android:id="@+id/addPenaltyRuns"
+                android:title="Add Penalty"/>
+            <item
+                android:id="@+id/changeBatsman1"
+                android:title="Change Batsman 1"/>
+            <item
+                android:id="@+id/changeBatsman2"
+                android:title="Change Batsman 2"/>
+            <item
+                android:id="@+id/changeBowler"
+                android:title="Change Bowler"/>
+            <item
+                android:id="@+id/changeStricker"
+                android:title="Switch On-Strike Batsman"/>
+            <item
+                android:id="@+id/exit"
+                android:title="@string/menu_exit"/>
+        </menu>
+    </item>
+
+</menu>

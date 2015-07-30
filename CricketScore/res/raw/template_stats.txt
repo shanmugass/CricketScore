@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>KBT Cricket League Stats</title>
+    <style type="text/css">
+        body
+        {
+            background-color: Black;
+            color: White;
+            font-family: Calibri, Arial;
+            text-align: center;
+        }
+        .container
+        {
+            width: 800px;
+            text-align: left;
+            border: 0px;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        table
+        {
+            border: 1px;
+            border-collapse: collapse;
+            border-width: 2px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: left;
+        }
+        
+        h1, h4
+        {
+            margin: 2px;
+        }
+        
+        td, th
+        {
+            padding: 5px;
+        }
+        .tblHeader
+        {
+            background-color: Red;
+        }
+        .inningsHeader
+        {
+            width: 100%;
+            background-color: Green;
+            margin-top: 20px;
+            padding: 5px;
+            font-size: larger;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .greenColor
+        {
+            color: Green;
+        }
+        .alignCenter
+        {
+            text-align: center;
+        }
+        .statsField
+        {
+            width: 70px;
+        }
+        table.tablesorter thead tr .header
+        {
+            background-image: url(bg.gif);
+            background-repeat: no-repeat;
+            background-position: center right;
+            cursor: pointer;
+        }
+        table.tablesorter th
+        {
+            cursor: pointer;
+        }
+        table.tablesorter thead tr .header
+        {
+            background-image: url(http://kbtleague.clanteam.com/Content/bg.gif);
+        }
+        
+        table.tablesorter thead tr .headerSortUp
+        {
+            background-image: url(http://kbtleague.clanteam.com/Content/asc.gif);
+        }
+        table.tablesorter thead tr .headerSortDown
+        {
+            background-image: url(http://kbtleague.clanteam.com/Content/desc.gif);
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+       
+        ++MatchContent++
+       
+        <script type="text/javascript" src="http://kbtleague.clanteam.com/Content/jquery.tablesorter.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#batsmanTable").tablesorter();
+                $("#bowlerTable").tablesorter();
+            });          
+        </script>
+    </div>
+</body>
+</html>

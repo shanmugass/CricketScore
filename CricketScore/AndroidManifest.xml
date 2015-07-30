@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sss.cricket.scorer.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewMatch"
+            android:label="@string/title_activity_new_match"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ViewMatch"
+            android:label="@string/title_activity_new_match"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddTeam"
+            android:label="@string/title_activity_add_team"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddTeamMember"
+            android:label="@string/title_activity_add_team_member"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MatchScoreSheet"
+            android:label="@string/title_activity_match_score_sheet"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="sss.cricket.scorer.ui.FullScoreBoard"
+            android:label="@string/title_activity_full_score_board"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="sss.cricket.scorer.ui.ViewTeamMember"
+            android:label="@string/title_activity_view_player"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="sss.cricket.scorer.ui.StatsHome"
+            android:label="@string/title_activity_view_player"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="sss.cricket.scorer.ui.ViewTeam"
+            android:label="@string/title_activity_view_team"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

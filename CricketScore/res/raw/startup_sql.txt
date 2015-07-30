@@ -1,0 +1,11 @@
+create table CricketPlayer (PlayerId integer primary key autoincrement, PlayerName text not null, BattingSkill integer, BowlingSkill integer);
+create table CricketTeam (TeamId integer primary key autoincrement, TeamName text not null);
+create table CricketTeamAssociation (TeamId integer, PlayerId integer);
+create table CricketMatch (MatchId integer primary key autoincrement, MatchName text, PlayedOn String, Team1 integer, Team2 integer, TossWonBy integer, BattingTeam integer,MatchType integer, Overs integer, WonBy	integer, MatchResult integer,MatchDescription Text);
+create table CricketInnings (InningsId	integer primary key autoincrement, MatchId integer, AllocatedOvers, InningsNo integer, StartedOn String, CompletedOn String, BattingTeam integer, Runs integer, BowledOvers numeric, Extras integer,Wickets integer);
+create table CricketInningsHistory	(InningsHistoryId integer primary key autoincrement, InningsId integer, over int, ball int, BowlerId integer, BatsmanId integer, runs integer, TotalRuns Integer, Wickets Integer);
+create table CricketInningsHistoryDetail(InningsId	integer, InningsHistoryId integer, BallType integer, Extras integer);
+create table CricketWicketHistory(InningsId	integer, InningsHistoryId integer, BowlerId integer, batsmanId integer, OutType integer, FielderId integer);
+create table CricketMatchType (MatchTypeId integer primary key autoincrement, MatchTypeName text not null, hasLimitedOvers integer, hasTwoInnigs integer);
+create table StatsBatsman (InningsId Integer, BattingPosition Integer, PlayerId integer, Runs Interger, Balls Integer, Fours Integer, Sixes Integer, IsOut Integer);
+create table StatsBowler (InningsId Integer, PlayerId integer, Runs Interger, Balls Integer, Wickets Integer, NoBalls Integer, Wides Integer);

@@ -1,0 +1,95 @@
+<resources>
+
+    <string name="app_name">SSS Cricket Scorer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Activity Titles -->
+    <string name="title_activity_home_screen">Cricket Scorer</string>
+    <string name="title_activity_new_match">New Match</string>
+    <string name="title_activity_view_match">View Existing Match</string>
+    <string name="title_activity_add_team">Add Team</string>
+    <string name="title_activity_add_team_member">Add Team Member</string>
+    <string name="title_activity_match_score_sheet">Scoring Sheet</string>
+    <string name="title_activity_full_score_board">Score Board</string>
+    <string name="title_activity_view_player">View Player</string>
+    <string name="title_activity_view_team">View Team</string>
+    <string name="title_activity_Stats">Player Stats</string>
+
+    <!-- Home Screen -->
+    <string name="home_screen_new_match">New Match</string>
+    <string name="home_screen_view_match">View Match</string>
+    <string name="home_screen_add_team">Manage Team</string>
+    <string name="home_screen_add_team_member">Manage Player</string>
+    <string name="home_screen_logo_description">KBT Cricket league</string>
+    <string name="home_screen_stats">View Player Stats</string>
+    <string name="home_screen_exit">Exit</string>
+
+    <!-- Menu -->
+    <string name="menu_new_match">New Match</string>
+    <string name="menu_view_match">View Match</string>
+    <string name="menu_add_team">Add Team</string>
+    <string name="menu_add_team_member">Add Team Member</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_create_sample_team">Create Sample Teams</string>
+
+    <!-- New Match -->
+    <string name="new_match_team1">Team 1</string>
+    <string name="new_match_team2">Team 2</string>
+    <string name="new_match_toss_won_by">Toss Won By</string>
+    <string name="new_match_toss_won_by_team1">Team 1</string>
+    <string name="new_match_toss_won_by_team2">Team 2</string>
+    <string name="new_match_elected_to">Elected To</string>
+    <string name="new_match_elected_to_bat">Bat</string>
+    <string name="new_match_elected_to_bowl">Bowl</string>
+    <string name="new_match_type">Match Type - Limited Overs - Test Match</string>
+    <string name="new_match_no_of_overs">No of Overs</string>
+    <string name="new_match_create_match">Create Match</string>
+    <string name="new_match_Match_Name">Match Name</string>
+
+    <!-- Add Team -->
+    <string name="add_team_team_name">Enter Your Team Name</string>
+    <string name="add_team_create_sample_team_members">Create Sample Team Members</string>
+    <string name="add_team_create_team">Create Team</string>
+
+    <!-- Add Team Member -->
+    <string name="add_team_member_select_team">Select Team to add a player.</string>
+    <string name="add_team_member_new_member">Player name</string>
+    <string name="add_team_member_associate_player">Add Player from another team</string>
+    <string name="add_team_member_select_from_team">Select Team to get the players</string>
+    <string name="add_team_member_select_player_to_add">Select player to add</string>
+    <string name="add_team_member_create_team_member">Create Player</string>
+    <string name="add_team_member_batting_skill">Batting Skill</string>
+    <string name="add_team_member_bowling_skill">Bowling Skill</string>
+    <string name="add_team_member_update_team_member">Save</string>
+
+    <!-- View Match -->
+    <string name="view_match_title">Select the match</string>
+    <string name="view_match_submit">View Match</string>
+    <string name="view_match_delete">Delete Match</string>
+
+    <!-- View Team -->
+    <string name="view_team_select">Select the Team to View</string>
+    <string name="view_team_submit">View Team</string>
+    <string name="view_team_Players">Players In Team</string>
+
+    <!-- Dialog -->
+    <string name="runsSeekLabel">Runs: </string>
+    <string name="wicket_fall_please_select">Please select the batsman</string>
+    <string name="wicket_fall_Wicket_type">How batsman got out?</string>
+    <string name="wicket_fall_please_select_fielder">Please select the fielder</string>
+    <string name="wicket_fall_plus_runs">Wicket + 0 Runs</string>
+    <string name="complete_match_won_by">Match Result</string>
+    <string name="complete_match_tied">Match Drawn</string>
+    <string name="complete_match_drawn">Match Tied</string>
+    <string name="complete_match_abandon">Match Adandon</string>
+    <string name="complete_match_result_description">Match result Description</string>
+    <string name="complete_match_hint">Provide match result details</string>
+    <string name="batsman_on_strike">Batsman on Strike?</string>
+    <!-- Stats -->
+    <string name="stats_batsman">Batsman Stats</string>
+    <string name="stats_bowler">Bowler Stats</string>
+    <string name="stats_PlayerName">Name</string>
+    <string name="stats_Innings">Ings</string>
+
+</resources>

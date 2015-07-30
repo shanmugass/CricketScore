@@ -1,0 +1,463 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Innings score details -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/batting_team1_label"
+                style="@style/lightBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/sample_team_name_1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batting_team2_label"
+                style="@style/lightBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/sample_team_name_2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/batting_team1_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/sample_score"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/bowling_team_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/sample_score"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/innings_2_row"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/batting_team_2nd_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/sample_score"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/bowling_team_2nd_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="@string/sample_score"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <!-- Batsman Score details -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                style="@style/lightBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:text="@string/batsman_header"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                style="@style/lightBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".10"
+                android:text="@string/batsman_runs"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                style="@style/lightBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".10"
+                android:text="@string/batsman_balls"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                style="@style/lightBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:text="@string/batsman_strikerate"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/changeOnstrikebatsman"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight=".10"
+                android:contentDescription="@string/image_switch_batsman"
+                android:onClick="changeOnstrikebatsman"
+                android:src="@drawable/av_repeat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <ImageView
+                android:id="@+id/batsmanImage1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight=".05"
+                android:contentDescription="@string/image_change"
+                android:src="@drawable/bat" />
+
+            <TextView
+                android:id="@+id/batting_player1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:clickable="true"
+                android:onClick="show_stats"
+                android:text="@string/sample_batsman_1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batting_player1_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".10"
+                android:text="@string/score_0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batting_player1_balls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".10"
+                android:text="@string/score_0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batting_player1_rr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:text="@string/score_0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/changeBatsman1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight=".10"
+                android:contentDescription="@string/image_change"
+                android:onClick="changeBatsmanClick"
+                android:src="@drawable/ic_action_refresh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <ImageView
+                android:id="@+id/batsmanImage2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight=".05"
+                android:contentDescription="@string/image_change"
+                android:src="@drawable/bat" />
+
+            <TextView
+                android:id="@+id/batting_player2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:clickable="true"
+                android:onClick="show_stats"
+                android:text="@string/sample_batsman_2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batting_player2_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".10"
+                android:text="@string/score_0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batting_player2_balls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".10"
+                android:text="@string/score_0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/batting_player2_rr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:text="@string/score_0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/changeBatsman2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight=".10"
+                android:contentDescription="@string/image_change"
+                android:onClick="changeBatsmanClick"
+                android:src="@drawable/ic_action_refresh" />
+        </LinearLayout>
+
+        <!-- Bowler Score details -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/bowler_label"
+                style="@style/lightBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/sample_bowler"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight=".10"
+                android:contentDescription="@string/image_change"
+                android:src="@drawable/ball" />
+
+            <TextView
+                android:id="@+id/bowler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".80"
+                android:clickable="true"
+                android:onClick="show_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/changeBowlower"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.10"
+                android:contentDescription="@string/image_change"
+                android:onClick="changeBowlerClick"
+                android:src="@drawable/ic_action_refresh" />
+        </LinearLayout>
+
+        <!-- Score Board Options -->
+
+
+        <!-- Score Board runs -->
+
+        <LinearLayout
+            android:id="@+id/ll_scoringControls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btn_run0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="autoScoreClick"
+                    android:text="@string/score_0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btn_run1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="autoScoreClick"
+                    android:text="@string/score_1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btn_run2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="autoScoreClick"
+                    android:text="@string/score_2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_run3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="autoScoreClick"
+                    android:text="@string/score_3" 
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Button
+                    android:id="@+id/btn_run4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="autoScoreClick"
+                    android:text="@string/score_4"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btn_run6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="autoScoreClick"
+                    android:text="@string/score_6" 
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0" >
+
+                <Button
+                    android:id="@+id/btn_wicket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="wicketClick"
+                    android:text="@string/wicket"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/btn_wide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="wideClick"
+                    android:text="@string/wide"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/btn_no_ball"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".333"
+                    android:onClick="noBallClick"
+                    android:text="@string/noball"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/btn_others"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:onClick="othersClick"
+                android:text="@string/others"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btn_undo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:onClick="undoClick"
+                android:text="@string/undo"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_oversdetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1.0" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rundetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/batting_summary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/runrate"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

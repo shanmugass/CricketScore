@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/btn_batsmanStats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight=".5"
+                android:onClick="showStats"
+                android:text="@string/stats_batsman" 
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/btn_bowlerStats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight=".5"
+                android:onClick="showStats"
+                android:text="@string/stats_bowler" 
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/tv_playerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:text="@string/stats_PlayerName"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_Innings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text="@string/stats_Innings"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_Runs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_Balls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_Avg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_twentyFivePlus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_fiftyPlus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_Higesht"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_Fours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_Sixes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_SR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".085"
+                android:clickable="true"
+                android:onClick="sort_stats"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_BatsmanStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

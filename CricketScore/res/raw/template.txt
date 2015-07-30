@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>KBT Cricket League Score Card</title>
+    <style type="text/css">
+        body
+        {
+            background-color: Black;
+            color: White;
+            font-family: Calibri, Arial;
+            text-align: center;
+        }
+        .container
+        {
+            width: 600px;
+            text-align: left;
+            border: 0px;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        table
+        {
+            border: 1px;
+            border-collapse: collapse;
+            border-width: 2px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: left;
+        }
+        
+        h1, h4
+        {
+            margin: 2px;
+        }
+        
+        td, th
+        {
+            padding: 5px;
+        }
+        .tblHeader
+        {
+            background-color: Red;
+        }
+        .inningsHeader
+        {
+            width: 100%;
+            background-color: Green;
+            margin-top: 20px;
+            padding: 5px;
+            font-size: larger;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .greenColor
+        {
+            color: Green;
+        }
+        .alignCenter
+        {
+            text-align: center;
+        }
+        .statsField
+        {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        ++MatchContent++
+    </div>
+</body>
+</html>

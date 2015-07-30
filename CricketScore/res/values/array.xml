@@ -1,0 +1,14 @@
+<resources>
+
+    <string-array name="WicketFallType">
+        <item>Caught</item>
+        <item>Bowled</item>
+        <item>Runout</item>
+        <item>Stumped</item>
+        <item>Caught-And-Bowled</item>
+        <item>LBW</item>
+        <item>Hitout</item>
+        <item>HandledBall</item>        
+    </string-array>
+
+</resources>

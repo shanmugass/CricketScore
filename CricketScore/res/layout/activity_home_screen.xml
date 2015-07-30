@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/home_screen_logo_description"
+            android:src="@drawable/ic_launcher" />
+
+        <Button
+            android:id="@+id/btn_new_match"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="homeScreenOnClick"
+            android:text="@string/home_screen_new_match"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_view_match"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="homeScreenOnClick"
+            android:text="@string/home_screen_view_match"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_add_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="homeScreenOnClick"
+            android:text="@string/home_screen_add_team"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_add_team_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="homeScreenOnClick"
+            android:text="@string/home_screen_add_team_member"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="homeScreenOnClick"
+            android:text="@string/home_screen_stats"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="homeScreenOnClick"
+            android:text="@string/home_screen_exit"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</ScrollView>

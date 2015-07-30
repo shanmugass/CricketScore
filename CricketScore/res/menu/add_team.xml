@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/viewTeam"
+        android:icon="@drawable/ic_action_edit"
+        android:showAsAction="ifRoom|withText"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/menucontainer"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="ifRoom|withText"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:title="@string/menu_exit"/>
+        </menu>
+    </item>
+
+</menu>

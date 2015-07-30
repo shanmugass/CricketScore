@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sample_team_name_1">GPCC Indians</string>
+    <string name="sample_team_name_2">Error Boys</string>
+    <string name="sample_batsman_1">Senthil</string>
+    <string name="sample_batsman_2">Saravananan</string>
+    <string name="sample_bowler">Bowler</string>
+    <string name="sample_score">0/0</string>
+    <string name="runrate">RunRate</string>
+    <string name="batsman_header">Batsman</string>
+    <string name="batsman_runs">R</string>
+    <string name="batsman_balls">B</string>
+    <string name="batsman_strikerate">SR</string>
+    <string name="image_switch_batsman">Switch Batsman</string>
+    <string name="image_change">Change Player</string>
+    <string name="Penalty">Penalty</string>
+    <string name="score_ball_by_ball">Ball</string>
+    <string name="score_0">0</string>
+    <string name="score_1">1</string>
+    <string name="score_2">2</string>
+    <string name="score_3">3</string>
+    <string name="score_4">4</string>
+    <string name="score_5">5</string>
+    <string name="score_6">6</string>
+    <string name="score_7">7</string>
+    <string name="score_8">8</string>
+    <string name="wicket">Wicket</string>
+    <string name="noball">No ball</string>
+    <string name="wide">Wide</string>
+    <string name="bye">Bye</string>
+    <string name="legbye">Leg Bye</string>
+    <string name="save">Save</string>
+    <string name="undo">Undo</string>
+    <string name="clear">Clear</string>
+    <string name="others">Others</string>
+
+</resources>
